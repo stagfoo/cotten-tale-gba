@@ -8,7 +8,9 @@
 <p align="center">created for the <a href="https://itch.io/jam/retro-platform-jam-4">Retro Jam 4</a> this is a demake of another game I didnt finish making lol. It shares no code or artwork with the original just characters and general level locations.</p>
 
 ## Screenshots
+<p align="left">
 <img width="300px" src="./screenshots/1.png" />
 <img width="300px" src="./screenshots/2.png" />
 <img width="300px" src="./screenshots/3.png" />
 <img width="300px" src="./screenshots/4.png" />
+</p>
