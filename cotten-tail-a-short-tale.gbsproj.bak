@@ -3303,8 +3303,8 @@
                                         "command": "EVENT_SWITCH_SCENE",
                                         "args": {
                                             "sceneId": "732e240c-57d1-4823-b317-9670ffbdb010",
-                                            "x": 8,
-                                            "y": 15,
+                                            "x": 1,
+                                            "y": 13,
                                             "direction": "",
                                             "fadeSpeed": "2"
                                         },
@@ -4097,9 +4097,9 @@
         },
         {
             "name": "Scene 7",
-            "backgroundId": "ac7163a9-9c04-4280-a0d4-d57f29131c11",
+            "backgroundId": "ced8706b-6627-43de-9464-b5df390530ca",
             "width": 40,
-            "height": 20,
+            "height": 30,
             "type": "PLATFORM",
             "paletteIds": [],
             "spritePaletteIds": [
@@ -4910,29 +4910,7 @@
             "id": "732e240c-57d1-4823-b317-9670ffbdb010",
             "x": 146.90909090909093,
             "y": 560,
-            "actors": [
-                {
-                    "name": "",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "38b51cea-bc3e-49b5-bddb-962280fcc72c",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "collisionGroup": "",
-                    "script": [],
-                    "startScript": [],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "dc4c5bcf-ec82-479a-acd5-99f999931e06",
-                    "x": 20,
-                    "y": 13
-                }
-            ],
+            "actors": [],
             "triggers": [],
             "script": [],
             "playerHit1Script": [],
@@ -12278,12 +12256,12 @@
         {
             "id": "38b51cea-bc3e-49b5-bddb-962280fcc72c",
             "name": "squid",
-            "numFrames": 8.75,
+            "numFrames": 7.5,
             "type": "animated",
             "filename": "squid.png",
-            "checksum": "44bfdfcde813e9bd52786a7928404846f073ae3f",
-            "width": 140,
-            "height": 140,
+            "checksum": "1a0e30fb33c7ab6f304c7d9715e6eb44cdca868a",
+            "width": 120,
+            "height": 131,
             "states": [
                 {
                     "id": "c6c54ed9-71eb-40e2-bef2-338c365dc60e",
@@ -14135,7 +14113,7 @@
                     ]
                 }
             ],
-            "numTiles": 58,
+            "numTiles": 86,
             "canvasWidth": 160,
             "canvasHeight": 144,
             "boundsX": 0,
@@ -14973,8 +14951,8 @@
     ],
     "settings": {
         "startSceneId": "732e240c-57d1-4823-b317-9670ffbdb010",
-        "startX": 29,
-        "startY": 12,
+        "startX": 31,
+        "startY": 19,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
