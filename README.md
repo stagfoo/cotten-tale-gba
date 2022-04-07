@@ -14,3 +14,10 @@
 <img width="300px" src="./screenshots/3.png" />
 <img width="300px" src="./screenshots/4.png" />
 </p>
+
+
+# Credits
+
+Music by Dominc Chan <3 (link tree coming)
+
+Everything else by @stagfoo
