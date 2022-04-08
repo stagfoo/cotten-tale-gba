@@ -597,8 +597,18 @@
             "script": [
                 {
                     "command": "EVENT_SCENE_PUSH_STATE",
-                    "args": {},
-                    "id": "d7bd85ab-78c0-451a-86e7-b37ab27a0d5d"
+                    "args": {
+                        "__collapse": true
+                    },
+                    "id": "37483262-dea1-4bc5-8087-91765ac9bbf9"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "4cbfede9-d388-425f-be24-768524cf5ece",
+                        "loop": true
+                    },
+                    "id": "de0537f8-8bb4-4ce1-b780-e2d462cfcdda"
                 }
             ],
             "playerHit1Script": [],
@@ -1060,7 +1070,23 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_SCENE_PUSH_STATE",
+                    "args": {
+                        "__collapse": true
+                    },
+                    "id": "9c9ae415-d3e4-4f13-b1f7-8ba5c46bb7f2"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "4cbfede9-d388-425f-be24-768524cf5ece",
+                        "loop": true
+                    },
+                    "id": "b1b1cf4e-88fe-4b6c-bb72-2b1ac01aad96"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -1671,7 +1697,15 @@
                     "args": {
                         "__collapse": true
                     },
-                    "id": "548de80c-964a-42c1-a4fe-e18aa9ce720e"
+                    "id": "c47bf0ce-23c7-40ee-909a-920492a11162"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "4cbfede9-d388-425f-be24-768524cf5ece",
+                        "loop": true
+                    },
+                    "id": "c7b6d9fe-2312-4813-9dcf-c42a93bbba23"
                 }
             ],
             "playerHit1Script": [],
@@ -4323,6 +4357,14 @@
                         "__collapse": true
                     },
                     "id": "b8a4162e-c535-46f4-888a-55a44e171ae7"
+                },
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "4cbfede9-d388-425f-be24-768524cf5ece",
+                        "loop": true
+                    },
+                    "id": "0d56ed7d-026c-447a-8b25-015a06f86a28"
                 }
             ],
             "playerHit1Script": [],
@@ -5600,15 +5642,6 @@
                     "collisionGroup": "1",
                     "script": [
                         {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "d226b08c-886f-4832-be56-0ce4fa753beb",
-                                "__collapse": false,
-                                "$variable[0]$": "6"
-                            },
-                            "id": "8cd4b566-282e-48c9-a52b-5a8a0e5ecfb3"
-                        },
-                        {
                             "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
                             "args": {
                                 "actorId": "player",
@@ -5652,6 +5685,15 @@
                                 ]
                             },
                             "id": "834f8b46-2f7e-4ac2-b6b9-4e3c6fecc8df"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "d226b08c-886f-4832-be56-0ce4fa753beb",
+                                "__collapse": false,
+                                "$variable[0]$": "6"
+                            },
+                            "id": "8cd4b566-282e-48c9-a52b-5a8a0e5ecfb3"
                         }
                     ],
                     "startScript": [],
@@ -5684,15 +5726,6 @@
                     "isPinned": false,
                     "collisionGroup": "1",
                     "script": [
-                        {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "d226b08c-886f-4832-be56-0ce4fa753beb",
-                                "__collapse": false,
-                                "$variable[0]$": "6"
-                            },
-                            "id": "08fce764-f495-44f1-80f4-8b056ed893dd"
-                        },
                         {
                             "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
                             "args": {
@@ -5737,6 +5770,15 @@
                                 ]
                             },
                             "id": "768af8bc-96a7-4730-8002-af661f3ed8a4"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "d226b08c-886f-4832-be56-0ce4fa753beb",
+                                "__collapse": false,
+                                "$variable[0]$": "6"
+                            },
+                            "id": "08fce764-f495-44f1-80f4-8b056ed893dd"
                         }
                     ],
                     "startScript": [],
@@ -5895,22 +5937,13 @@
                     "collisionGroup": "1",
                     "script": [
                         {
-                            "command": "EVENT_CALL_CUSTOM_EVENT",
-                            "args": {
-                                "customEventId": "d226b08c-886f-4832-be56-0ce4fa753beb",
-                                "$variable[0]$": "6",
-                                "__collapse": true
-                            },
-                            "id": "d38a99b0-bcb5-48b2-bb1d-d4cb5c8772ef"
-                        },
-                        {
                             "command": "EVENT_IF_ACTOR_RELATIVE_TO_ACTOR",
                             "args": {
                                 "actorId": "player",
                                 "operation": "up",
                                 "otherActorId": "1",
                                 "__collapseElse": false,
-                                "__collapse": true
+                                "__collapse": false
                             },
                             "children": {
                                 "true": [
@@ -5947,6 +5980,15 @@
                                 ]
                             },
                             "id": "ffd0a6c7-529b-471e-b9b4-079c5e64f0ab"
+                        },
+                        {
+                            "command": "EVENT_CALL_CUSTOM_EVENT",
+                            "args": {
+                                "customEventId": "d226b08c-886f-4832-be56-0ce4fa753beb",
+                                "$variable[0]$": "6",
+                                "__collapse": false
+                            },
+                            "id": "d38a99b0-bcb5-48b2-bb1d-d4cb5c8772ef"
                         }
                     ],
                     "startScript": [],
@@ -5973,7 +6015,7 @@
                     "name": "",
                     "id": "5082a9a2-629e-4680-aa6a-e11e853939f4",
                     "x": 0,
-                    "y": 22,
+                    "y": 23,
                     "width": 40,
                     "height": 2,
                     "script": [
@@ -11332,11 +11374,11 @@
         {
             "id": "53938bbc-7571-4398-9cb0-722b25204f28",
             "name": "cottonm-combine",
-            "numFrames": 7,
+            "numFrames": 8,
             "type": "animated",
             "filename": "cottonm-combine.png",
-            "checksum": "6c44d98cd06a9d97a604e4cb505b6475f1dd8e52",
-            "width": 112,
+            "checksum": "1a8b739deb84eb91d255e640c5cf1352e7218089",
+            "width": 128,
             "height": 16,
             "states": [
                 {
@@ -11785,6 +11827,32 @@
                                             "objPalette": "OBP0",
                                             "paletteIndex": 0,
                                             "priority": false
+                                        },
+                                        {
+                                            "id": "2bf2481c-7006-4a8d-9bd5-314bc8326a6d",
+                                            "x": 1,
+                                            "y": -1,
+                                            "sliceX": 112,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "091ac88f-820e-4b11-b468-e595433f6daa",
+                                            "x": 9,
+                                            "y": -1,
+                                            "sliceX": 120,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
                                         }
                                     ]
                                 }
@@ -11814,6 +11882,32 @@
                                             "x": 8,
                                             "y": 0,
                                             "sliceX": 104,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "549090bf-bec8-4043-9e87-c1f6ef3bcdf9",
+                                            "x": 0,
+                                            "y": -1,
+                                            "sliceX": 112,
+                                            "sliceY": 0,
+                                            "palette": 0,
+                                            "flipX": false,
+                                            "flipY": false,
+                                            "objPalette": "OBP0",
+                                            "paletteIndex": 0,
+                                            "priority": false
+                                        },
+                                        {
+                                            "id": "e04168f2-a35c-4856-8aeb-1367edc3d797",
+                                            "x": 8,
+                                            "y": -1,
+                                            "sliceX": 120,
                                             "sliceY": 0,
                                             "palette": 0,
                                             "flipX": false,
@@ -12005,7 +12099,7 @@
                     "flipLeft": true
                 }
             ],
-            "numTiles": 14,
+            "numTiles": 16,
             "canvasWidth": 16,
             "canvasHeight": 16,
             "boundsX": 0,
@@ -18023,6 +18117,13 @@
     ],
     "music": [
         {
+            "id": "4cbfede9-d388-425f-be24-768524cf5ece",
+            "name": "bar",
+            "filename": "bar.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
             "id": "6caf30cc-be84-4aa2-8097-92f3cb395de3",
             "name": "boss",
             "filename": "boss.mod",
@@ -18195,16 +18296,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "b938680e-d238-47fe-a8ff-fffadde8d6ad",
-        "startX": 15,
-        "startY": 4,
+        "startSceneId": "732e240c-57d1-4823-b317-9670ffbdb010",
+        "startX": 33,
+        "startY": 13,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
         "worldScrollX": 159,
-        "worldScrollY": 201,
+        "worldScrollY": 348,
         "zoom": 137.5,
         "customColorsEnabled": true,
         "sgbEnabled": false,
