@@ -18,6 +18,6 @@
 
 # Credits
 
-Music by Dominc Chan <3 (link tree coming)
+Music by [Dominc Chan](https://linktr.ee/remekdc) <3
 
 Everything else by @stagfoo
